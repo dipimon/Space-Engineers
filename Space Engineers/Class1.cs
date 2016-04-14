@@ -27,7 +27,7 @@ namespace Space_Engineers
 
         void Main()
         {
-            Echo(Me.CustomName + " was last run " + ElapsedTime.TotalSeconds + " seconds ago.");
+            Echo(Me.CustomName + " was last run " + Runtime.TimeSinceLastRun /*ElapsedTime.TotalSeconds*/ + " seconds ago.");
             const string nameVent = "Air Vents";
             const string nameSound = "Sound Blocks";
             const string nameInnerHangar = "Inner Hangardoor";
